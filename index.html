@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+    <style>
+    /* RESPONSIVE CODE FOR ALL DEVICES */
+
+*{
+    box-sizing:border-box;
+}
+
+html,body{
+    overflow-x:hidden;
+    width:100%;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+
+@media(max-width:768px){
+
+    body{
+        padding:0;
+        margin:0;
+    }
+
+    .container{
+        width:95%;
+        margin:auto;
+    }
+
+    nav,
+    .Servicesnav,
+    header,
+    .Serviceheader{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .card-container,
+    .service-boxes{
+        grid-template-columns:1fr;
+    }
+
+    table{
+        width:100%;
+        font-size:14px;
+    }
+
+    h1{
+        font-size:30px;
+    }
+
+    h2{
+        font-size:22px;
+    }
+
+    p{
+        font-size:15px;
+    }
+}
+    </style>
+</head>
+<body class="infoBody">
+  <div class="homecontainer">
+    
+    <header class="header"; style="font-family: Oswald;color: rgb(255, 255, 255);">
+        <img src="Images/logo_trial (1).png" alt="Company Logo" width="250" align="Left" class="logo">
+        <h1 style="font-family: Oswald;color: #000000;font-size: 300%;">SereneThrive Therapy</h1>
+           <i><p align="center">"DON'T GET MAD,GET SERENETHRIVE THERAPY." </p></i>
+           
+    
+      
+      
+    </header>
+    <nav   class="Servicenav" class="Servicenav a" class="Serviceinfo">
+         <b><a href="index.html">Home</a></b>
+        <b><a href="about-us.html">About Us</a></b>
+        <b><a href="products&services.html">Products & Services</a></b>
+        <b><a href="pricing-page.html">Pricing Page</a></b>
+        <b><a href="get-invovled(portal).html">Get Involved(Portal)</a></b>
+        <b><a href="contact-us.html">Contact Us</a></b>
+        <b><a href="gallery.html">Gallery</a></b>
+      
+     
+    </nav>
+    
+    <div class="info">
+        
+            
+        <marquee direction="left" >
+          <h1 style="color:turquoise;">
+        "Discover Balance, Shop Therapy: Elevate Your Mind, Body,
+        and Space!"
+    </h1>
+  </marquee>  
+          
+
+
+        <section class="welcome-section">
+
+    <div class="features-container">
+
+        <div class="feature-card">
+            <h2>🧘 Guided Meditation</h2>
+            <p>Relax your mind and improve focus with calming meditation techniques.</p>
+        </div>
+
+        <div class="feature-card">
+            <h2>💚 Stress Relief</h2>
+            <p>Discover healthy ways to manage stress and improve emotional wellness.</p>
+        </div>
+
+        <div class="feature-card">
+            <h2>🌸 Self-Care Support</h2>
+            <p>Explore wellness products and self-care tools for daily balance.</p>
+        </div>
+
+        <div class="feature-card">
+            <h2>✨ Positive Mindset</h2>
+            <p>Build confidence and emotional strength through motivational support.</p>
+        </div>
+
+    </div>
+</section>
+<div class="cloud">
+
+<h1>SereneThrive Question</h1>
+
+<div class="question">
+Do You Have Stress Problems?
+</div>
+<button class="yes-btn" onclick="goToServices()">
+Yes
+</button>
+
+<button class="no-btn" onclick="showNo()">
+No
+</button>
+<div id="answer" class="result"></div>
+<script>
+
+/* YES BUTTON - GO TO PRODUCTS & SERVICES PAGE */
+
+function goToServices(){
+
+window.location.href = "Products & Services.html";
+
+}
+
+/* NO BUTTON MESSAGE */
+
+function showNo(){
+
+document.getElementById("answer").innerHTML =
+"🌸 Great! Keep maintaining your peaceful wellness journey.";
+
+}
+
+</script>
+
+
+
+<style>
+
+.features-container{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:stretch;
+    flex-wrap:nowrap;
+    gap:25px;
+    margin-bottom:40px;
+    overflow-x:auto;
+    padding:20px;
+}
+
+/* FEATURE CARDS */
+
+.feature-card{
+    min-width:260px;
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.12);
+    transition:0.3s;
+    text-align:center;
+}
+
+.feature-card:hover{
+    transform:translateY(-8px);
+}
+
+
+.features-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    margin-bottom:40px;
+}
+
+.feature-card{
+    width:260px;
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.12);
+    transition:0.3s;
+
+}
+
+.feature-card:hover{
+    transform:translateY(-8px);
+}
+
+.feature-card h2{
+    color:#2e8b57;
+    margin-bottom:15px;
+}
+
+.feature-card p{
+    color:#555;
+    font-size:16px;
+    line-height:1.6;
+}
+
+.quote-box{
+    background:#dff5e3;
+    padding:30px;
+    border-radius:25px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.12);
+}
+
+.quote-box h2{
+    color:#2e8b57;
+    margin-bottom:15px;
+}
+
+.quote-box p{
+    font-size:20px;
+    color:#444;
+    font-style:italic;
+}
+
+@media screen and (max-width:768px){
+
+    .welcome-box h1{
+        font-size:28px;
+    }
+
+    .feature-card{
+        width:90%;
+    }
+
+}
+
+</style>
+
+
+     <section class="quiz-section"></section>   
+<title> </title>
+
+
+<style>
+
+body{
+    margin:0;
+    padding:0;
+    
+    background:linear-gradient(to bottom right,#d8c3ff,#ffd6f6,#ffffff);
+    font-family:Arial, sans-serif;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:768px){
+
+    .quiz-container h1{
+        font-size:28px;
+    }
+
+    .mood-btn{
+        width:90%;
+    }
+
+}
+/* QUIZ SECTION */
+
+.quiz-section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px 20px;
+}
+
+/* MOOD CLOUD BOX */
+
+.cloud{
+    width:350px;
+    padding:40px;
+    background:white;
+    border-radius:60px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,0.15);
+    animation:float 3s ease-in-out infinite;
+}
+
+/* FLOATING EFFECT */
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+/* QUIZ TITLE */
+
+.cloud h1{
+    color:#8a4fff;
+    margin-bottom:10px;
+}
+
+/* QUESTION */
+
+.question{
+    font-size:24px;
+    margin-top:20px;
+    margin-bottom:30px;
+    color:#333;
+}
+
+/* BUTTONS */
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+/* BUTTON STYLE */
+
+button{
+    padding:15px 35px;
+    border:none;
+    border-radius:40px;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+/* YES BUTTON */
+
+.yes-btn{
+    background:#b388ff;
+    color:white;
+}
+
+.yes-btn:hover{
+    background:#9c64ff;
+    transform:scale(1.08);
+}
+
+/* NO BUTTON */
+
+.no-btn{
+    background:#ffd6ec;
+    color:#7a2c5d;
+}
+
+.no-btn:hover{
+    background:#ffb7dc;
+    transform:scale(1.08);
+}
+
+/* RESULT */
+
+.result{
+    margin-top:25px;
+    font-size:20px;
+    font-weight:bold;
+    color:#5a3d7a;
+}
+.Hfooter{
+    background:#7c4dff;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+
+}
+</style>
+
+
+</div>
+</section>
+        
+
+<hr>
+        <div class="footer">
+          <p>&copy; 2024 SereneThrive Therapy. All rights reserved.</p>
+        <p>Contact us: info@serenethrive.com | Phone: 011-854-1035</p>
+        </div>
+      </div>
+      
+</body>
+
+</div>
+</html>
+
+
+

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Products & Services</title>
+  <style>
+  
+    </style>
+</head>
+
+<body >
+    <header class="Serviceheader">
+      <img src="Images/logo_trial (1).png" alt="Company Logo" width="250" align="Left">
+        <h1 style="font-family:Georgia, 'Times New Roman', Times, serif;" align="center"><font='7'><center>Prodcts & Services</h1></font></center>
+
+      
+    </header>
+    <nav   class="Servicenav" class="Servicenav a" class="Serviceinfo">
+       <b><a href="index.html">Home</a></b>
+        <b><a href="about-us.html">About Us</a></b>
+        <b><a href="products&services.html">Products & Services</a></b>
+        <b><a href="pricing-page.html">Pricing Page</a></b>
+        <b><a href="get-invovled(portal).html">Get Involved(Portal)</a></b>
+        <b><a href="contact-us.html">Contact Us</a></b>
+        <b><a href="gallery.html">Gallery</a></b>
+      
+     
+    </nav>
+  
+
+<style>
+    /* RESPONSIVE CODE FOR ALL DEVICES */
+
+*{
+    box-sizing:border-box;
+}
+
+html,body{
+    overflow-x:hidden;
+    width:100%;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+.container,
+.card-container,
+.service-boxes,
+nav,
+.Servicesnav,
+header,
+.Serviceheader{
+    width:100%;
+}
+
+@media(max-width:768px){
+
+    body{
+        padding:0;
+        margin:0;
+    }
+
+    .container{
+        width:95%;
+        margin:auto;
+    }
+
+    nav,
+    .Servicesnav,
+    header,
+    .Serviceheader{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .card-container,
+    .service-boxes{
+        grid-template-columns:1fr;
+    }
+
+    table{
+        width:100%;
+        font-size:14px;
+    }
+
+    h1{
+        font-size:30px;
+    }
+
+    h2{
+        font-size:22px;
+    }
+
+    p{
+        font-size:15px;
+    }
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+
+.section-title{
+    text-align:center;
+    margin-top:60px;
+}
+
+.section-title h1{
+    font-size:50px;
+    color:#ff0062;
+}
+
+.section-title p{
+    color:#666;
+    margin-top:10px;
+    font-size:18px;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    padding:50px 0;
+}
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    transition:0.4s ease;
+    position:relative;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.02);
+    box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:contain;
+    object-position:center;
+    display:block;
+    padding:10px;
+    background:#f8f8f8;
+}
+
+.card-content{
+    padding:25px;
+}
+
+.card-content h2{
+    color:#1d7c64;
+    margin-bottom:10px;
+}
+
+.card-content p{
+    color:#555;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+.price{
+    font-size:22px;
+    font-weight:bold;
+    color:#ff6b81;
+    margin-bottom:15px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#1d7c64;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#145a49;
+}
+
+.badge{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:#ff6b81;
+    color:white;
+    padding:8px 15px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+/* BUY BUTTON */
+
+.buy-btn{
+    margin-top:20px;
+    padding:14px 30px;
+    border:none;
+    border-radius:40px;
+    background:#7c4dff;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+.buy-btn:hover{
+    background:#9c64ff;
+    transform:scale(1.05);
+}
+
+/* MESSAGE */
+
+#portal-message{
+    margin-top:15px;
+    color:#5a3d7a;
+    font-weight:bold;
+    font-size:16px;
+}
+footer{
+    background:#1d7c64;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:70px;
+}
+
+@media(max-width:768px){
+    .section-title h1{
+        font-size:35px;
+    }
+}
+</style>
+
+<body>
+
+<div class="section-title">
+    <h1>Our Products</h1>
+  
+</div>
+<!-- PRODUCT CARD -->
+
+<div class="product-card">
+
+<h2>Relaxation Therapy Kit</h2>
+
+<p>
+A wellness package designed to reduce stress and improve relaxation.
+</p>
+
+<button class="buy-btn" onclick="goToPortal()">
+Add To Cart
+</button>
+
+<div id="portal-message"></div>
+
+</div>
+<div class="container">
+    <div class="card-container">
+
+        <div class="card">
+            <div class="badge">Wellness</div>
+            <img src="Images/Medication.jpeg" alt="Ashwaganda Medication">
+            <div class="card-content">
+                <h2>Ashwaganda Tablets</h2>
+                <p>Natural wellness tablets designed to help reduce stress and promote relaxation.</p>
+                <div class="price">R300</div>
+                <button class="buy-btn" onclick="goToGetInvolved(Portal)()">Buy Now 
+
+</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="badge">Therapy</div>
+            <img src="Images/Tablets .jpeg" alt="Anxiety citalopram">
+            <div class="card-content">
+                <h2>Anxiety Tablets - Citalopram</h2>
+                <p>Support your mental wellness journey with calming anxiety relief tablets.</p>
+                <div class="price">R170</div>
+               <button class="buy-btn" onclick="goToGetInvolved(Portal)()">Buy Now </button>
+               
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="badge">Relax</div>
+            <img src="Images/Massager.webp" alt="Massager">
+            <div class="card-content">
+                <h2>DQUIP Pulse Massager</h2>
+                <p>Relieve body tension and muscle stress with a powerful pulse massage device.</p>
+                <div class="price">R280</div>
+                <button class="buy-btn" onclick="goToGetInvolved(Portal)()">Buy Now </button>
+           
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="badge">Premium</div>
+            <img src="Images/shopping.webp" alt="Relaxation Aid">
+            <div class="card-content">
+                <h2>Zen Meditation & Relaxation Aid</h2>
+                <p>Create a peaceful atmosphere for mindfulness, meditation, and relaxation.</p>
+                <div class="price">R1000</div>
+               <button class="buy-btn" onclick="goToGetInvolved(Portal)()">Buy Now </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="badge">Stress Relief</div>
+            <img src="Images/Dough.jpeg" alt="Stress Relief Dough">
+            <div class="card-content">
+                <h2>Therapy Reduce-Stress Dough</h2>
+                <p>Calming sensory dough that helps reduce anxiety and improve relaxation.</p>
+                <div class="price">R97</div>
+                <button class="buy-btn" onclick="goToGetInvolved(Portal)()">Buy Now </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="badge">Smart Wellness</div>
+            <img src="Images/Stress Tracker.webp" alt="Stress Tracker">
+            <div class="card-content">
+                <h2>Wearable Stress Tracker</h2>
+                <p>Monitor your stress levels and wellness activity throughout the day.</p>
+                <div class="price">R400</div>
+                <button class="buy-btn" onclick="goToGetInvolved(Portal)()">Buy Now </button>
+            </div>
+        </div>
+
+    </div>
+</div>
+ 
+
+
+    <div class="Servicefooter">
+        <p>&copy; 2024 SereneThrive Therapy. All rights reserved.</p>
+      <p>Contact us: info@serenethrive.com | Phone: 011-854-1035</p>
+      </div>
+<script>
+
+function goToPortal(){
+
+document.getElementById("portal-message").innerHTML =
+"✨ Please create a portal account before purchasing products.";
+
+setTimeout(function(){
+
+window.location.href = "Get Invovled(Portal).html";
+
+},2000);
+
+}
+
+</script>
+</body>
+</html>
+
+
+
+
+

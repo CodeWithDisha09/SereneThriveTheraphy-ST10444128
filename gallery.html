@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gallery</title>
+    <style>
+      /* RESPONSIVE GALLERY IMAGES */
+
+.Galleryimage-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    width:100%;
+    padding:20px;
+}
+
+.Galleryimage-container figure{
+    width:300px;
+    text-align:center;
+}
+
+.Galleryimage-container img{
+    width:100%;
+    height:auto;
+    border-radius:10px;
+    object-fit:cover;
+}
+
+/* MOBILE VIEW */
+
+@media screen and (max-width:768px){
+
+    .Galleryimage-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .Galleryimage-container figure{
+        width:90%;
+    }
+
+    .Galleryimage-container img{
+        width:100%;
+        height:auto;
+    }
+
+    h1{
+        font-size:28px;
+    }
+
+    h2{
+        font-size:22px;
+    }
+}
+    @media only screen and (max-width: 600px) {
+    }
+    /* RESPONSIVE CODE FOR ALL DEVICES */
+
+*{
+    box-sizing:border-box;
+}
+
+html,body{
+    overflow-x:hidden;
+    width:100%;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+.container,
+.card-container,
+.service-boxes,
+nav,
+.Servicesnav,
+header,
+.Serviceheader{
+    width:100%;
+}
+
+@media(max-width:768px){
+
+    body{
+        padding:0;
+        margin:0;
+    }
+
+    .container{
+        width:95%;
+        margin:auto;
+    }
+
+    nav,
+    .Servicesnav,
+    header,
+    .Serviceheader{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .card-container,
+    .service-boxes{
+        grid-template-columns:1fr;
+    }
+
+    table{
+        width:100%;
+        font-size:14px;
+    }
+
+    h1{
+        font-size:30px;
+    }
+
+    h2{
+        font-size:22px;
+    }
+
+    p{
+        font-size:15px;
+    }
+}
+  </style>
+</head>
+<body class="Gallerybody" class="Galleryinfo" class="Gallerycontent">
+    <header class="Galleryheader">
+        <img src="Images/logo_trial (1).png" alt="Company Logo" width="250" align="Left">
+        <h1 style="font-family:Georgia, 'Times New Roman', Times, serif;"><font='7'>Gallery</h1></font>
+        
+    </header>
+    
+    <nav class="Gallerynav" class="Gallerynav a">
+         <b><a href="index.html">Home</a></b>
+        <b><a href="about-us.html">About Us</a></b>
+        <b><a href="products&services.html">Products & Services</a></b>
+        <b><a href="pricing-page.html">Pricing Page</a></b>
+        <b><a href="get-invovled(portal).html">Get Involved(Portal)</a></b>
+        <b><a href="contact-us.html">Contact Us</a></b>
+        <b><a href="gallery.html">Gallery</a></b>
+        
+        
+     
+    </nav>
+    <h2><center>THERAPY:</h2></center>
+    <div class="Galleryimage-container"  class="Galleryimage-container img" class="Galleryimage-caption" >
+    <figure >
+        <img src="Images/Manager.jpg" width="300" height="300" >
+        <figcaption>Manager of SereneThrive Therapy</figcaption>
+      </figure>
+
+      <figure >
+        <img src="Images/couple Counselling.jpeg" width="350" height="300" >
+        <figcaption>Couple Counseling</figcaption>
+      </figure>      
+  
+      <figure>
+        <img src="Images/Individual therapy session.jpeg" width="350" height="300">
+        <figcaption>Individual therapy session</figcaption>
+      </figure>
+
+    </div>
+    </div>
+  
+    <hr>
+    <div class="Galleryimage-container"  class="Galleryimage-container img" class="Galleryimage-caption">
+      <figure>
+        <img src="Images/Mental Health.jpg"  width="350" height="300">
+        <figcaption>Mental Health</figcaption>
+      </figure>
+
+      <figure>
+        <img src="Images/Thereapy products.jpg" width="350" height="300">
+        <figcaption>Therapy Products= Equipment</figcaption>
+      </figure>
+
+     
+  
+      <figure>
+        <img src="Images/Data Tracking.jpeg" width="350" height="300">
+        <figcaption>Data Tracker for Customers</figcaption>
+      </figure>
+    </div>
+    </div>
+    <hr>
+    <div class="Galleryimage-container"  class="Galleryimage-container img" class="Galleryimage-caption">
+    <figure>
+      <img src="Images/Medication.jpeg" width="350" height="300">
+      <figcaption>Medication=Products</figcaption>
+    </figure>
+
+    <figure>
+      <img src="Images/Workshops.jpeg" width="350" height="300">
+      <figcaption>Workshops</figcaption>
+    </figure>
+
+    <figure>
+      <img src="Images/MEDITATION.jpeg" width="350" height="300">
+      <figcaption>CALM = MEDITATION</figcaption>
+    </figure>
+  </div>
+  
+  
+    <div class="Galleryfooter">
+        <p>&copy; 2024 SereneThrive Therapy. All rights reserved.</p>
+      <p>Contact us: info@serenethrive.com | Phone: 011-854-1035</p>
+      </div>
+
+    
+</body>
+</html>

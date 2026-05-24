@@ -1,0 +1,420 @@
+               
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+
+<title>Contact Us</title>
+
+<style>
+/* RESPONSIVE CODE FOR ALL DEVICES */
+
+*{
+    box-sizing:border-box;
+}
+
+html,body{
+    overflow-x:hidden;
+    width:100%;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+.container,
+.card-container,
+.service-boxes,
+nav,
+.Servicesnav,
+header,
+.Serviceheader{
+    width:100%;
+}
+
+@media(max-width:768px){
+
+    body{
+        padding:0;
+        margin:0;
+    }
+
+    .container{
+        width:95%;
+        margin:auto;
+    }
+
+    nav,
+    .Servicesnav,
+    header,
+    .Serviceheader{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .card-container,
+    .service-boxes{
+        grid-template-columns:1fr;
+    }
+
+    table{
+        width:100%;
+        font-size:14px;
+    }
+
+    h1{
+        font-size:30px;
+    }
+
+    h2{
+        font-size:22px;
+    }
+
+    p{
+        font-size:15px;
+    }
+}
+/* BODY */
+
+.Contactbody{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(to right,rgb(205, 231, 255)),#aec6ff;
+}
+
+/* HEADER */
+
+.Contactheader{
+    text-align:center;
+    padding:20px;
+    background:rgba(255, 0, 255, 0.945);
+}
+
+.Contactheader img{
+    margin-bottom:10px;
+}
+
+/* NAVIGATION */
+
+.Contactnav{
+    background:linear-gradient(to right,#868686,#868686);
+    padding:18px;
+    text-align:center;
+}
+
+.Contactnav a{
+    color:rgb(0, 0, 0);
+    text-decoration:none;
+    margin:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.Contactnav a:hover{
+    color:#ffe082;
+}
+
+/* CONTACT SECTION */
+
+.contact-container{
+    width:90%;
+    max-width:1100px;
+    margin:50px auto;
+    display:flex;
+    flex-wrap:wrap;
+    gap:40px;
+    align-items:center;
+    justify-content:center;
+}
+
+/* LEFT SIDE */
+
+.contact-info{
+    flex:1;
+    min-width:300px;
+}
+
+.contact-info h2{
+    color:#2d1b69;
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.contact-info p{
+    color:#555;
+    line-height:1.7;
+    font-size:17px;
+}
+
+.contact-details{
+    margin-top:30px;
+}
+
+.contact-details p{
+    margin:12px 0;
+    font-weight:bold;
+    color:#333;
+}
+
+/* FORM */
+
+.contact-form{
+    flex:1;
+    min-width:320px;
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 8px 30px rgba(0,0,0,0.12);
+}
+
+/* FORM TITLE */
+
+.contact-form h3{
+    text-align:center;
+    color:#2d1b69;
+    margin-bottom:30px;
+    font-size:30px;
+}
+
+/* INPUT GROUP */
+
+.input-group{
+    margin-bottom:25px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+    color:#2d1b69;
+}
+
+/* INPUTS */
+
+.input-group input,
+.input-group textarea{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-bottom:2px solid #d5d5d5;
+    background:#f8f8ff;
+    font-size:15px;
+    outline:none;
+    transition:0.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus{
+    border-bottom:2px solid #4f6dff;
+    background:white;
+}
+
+/* TEXTAREA */
+
+.input-group textarea{
+    height:140px;
+    resize:none;
+}
+
+/* BUTTON */
+
+.contact-form button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:40px;
+    background:linear-gradient(to right,#3dcfd3,#4f6dff);
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.contact-form button:hover{
+    transform:scale(1.03);
+}
+
+
+
+/* IMAGE */
+
+.contact-image{
+    text-align:center;
+    margin-top:40px;
+}
+
+.contact-image img{
+    width:500px;
+    max-width:90%;
+    border-radius:25px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* FOOTER */
+
+.Contactfooter{
+    margin-top:50px;
+    background:Grey;
+    text-align:center;
+    padding:25px;
+    box-shadow:0 -3px 10px rgba(0,0,0,0.08);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .contact-container{
+        flex-direction:column;
+    }
+
+    .Contactnav a{
+        display:inline-block;
+        margin:10px;
+    }
+
+}
+
+</style>
+</head>
+
+<body class="Contactbody">
+
+<!-- HEADER -->
+
+<header class="Contactheader">
+
+    <img src="Images/logo_trial (1).png" 
+    alt="Company Logo" width="230" align="left">
+
+    <h1 style="font-family:Georgia, 'Times New Roman', Times, serif;">
+        Contact Us
+    </h1>
+
+</header>
+
+<!-- NAVIGATION -->
+
+<nav class="Contactnav">
+
+    <b><a href="Index.html">Home</a></b>
+        <b><a href="index.html">Home</a></b>
+        <b><a href="about-us.html">About Us</a></b>
+        <b><a href="products&services.html">Products & Services</a></b>
+        <b><a href="pricing-page.html">Pricing Page</a></b>
+        <b><a href="get-invovled(portal).html">Get Involved(Portal)</a></b>
+        <b><a href="contact-us.html">Contact Us</a></b>
+        <b><a href="gallery.html">Gallery</a></b>
+
+</nav>
+
+<!-- CONTACT SECTION -->
+
+<section class="contact-container">
+
+    <!-- LEFT SIDE -->
+
+    <div class="contact-info">
+
+        <h2>Get In Touch</h2>
+
+        <p><b>
+            We are here to support your mental wellness journey. 
+            Contact SereneThrive Therapy for enquiries, appointments,
+            wellness resources, or support services.</b>
+        </p>
+
+        <div class="contact-details">
+
+            <p>📞 Phone: 011 854 1035</p>
+
+            <p>📠 Fax: 011 852 4803</p>
+
+            <p>📧 Email: info@serenethrive.com</p>
+
+            <p>📍 Johannesburg, South Africa</p>
+
+        </div>
+
+    </div>
+
+    <!-- FORM -->
+
+    <div class="contact-form">
+
+        <h3>Contact Submission Form</h3>
+
+        <form>
+
+            <div class="input-group">
+
+                <label>Full Name</label>
+
+                <input type="text" 
+                placeholder="e.g. Alex Smith">
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Email Address</label>
+
+                <input type="email" 
+                placeholder="e.g. alex@example.com">
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Phone Number</label>
+
+                <input type="tel" 
+                placeholder="e.g. 071 234 5678">
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Your Message</label>
+
+                <textarea 
+                placeholder="Type your message here..."></textarea>
+
+            </div>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<div class="Contactfooter">
+
+    <p>
+        &copy; 2024 SereneThrive Therapy. 
+        All rights reserved.
+    </p>
+
+    <p>
+        Contact us: info@serenethrive.com 
+        | Phone: 011 854-1035
+    </p>
+
+</div>
+
+</body>
+</html>
+                
+
+                
+                
+                            

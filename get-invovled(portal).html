@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+
+<title>Contact Us</title>
+
+<style>
+/* RESPONSIVE CODE FOR ALL DEVICES */
+
+*{
+    box-sizing:border-box;
+}
+
+html,body{
+    overflow-x:hidden;
+    width:100%;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+.container,
+.card-container,
+.service-boxes,
+nav,
+.Servicesnav,
+header,
+.Serviceheader{
+    width:100%;
+}
+
+@media(max-width:768px){
+
+    body{
+        padding:0;
+        margin:0;
+    }
+
+    .container{
+        width:95%;
+        margin:auto;
+    }
+
+    nav,
+    .Servicesnav,
+    header,
+    .Serviceheader{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .card-container,
+    .service-boxes{
+        grid-template-columns:1fr;
+    }
+
+    table{
+        width:100%;
+        font-size:14px;
+    }
+
+    h1{
+        font-size:30px;
+    }
+
+    h2{
+        font-size:22px;
+    }
+
+    p{
+        font-size:15px;
+    }
+}
+/* BODY */
+
+.Portalbody{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(to right,#eef2ff,#f8f5ff);
+}
+
+/* HEADER */
+
+.Portalheader{
+    text-align:center;
+    padding:20px;
+}
+
+/* NAVIGATION */
+
+.Portalnav{
+    background:white;
+    padding:18px;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+.Portalnav a{
+    text-decoration:none;
+    color:rgb(43,1,97);
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.Portalnav a:hover{
+    color:#6c63ff;
+}
+
+/* FORM SECTION */
+
+.contact-section{
+    width:90%;
+    max-width:950px;
+    margin:50px auto;
+    background:white;
+    border-radius:25px;
+    padding:40px;
+    box-shadow:0 8px 30px rgba(0,0,0,0.12);
+}
+
+/* TITLE */
+
+.contact-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.contact-title h2{
+    color:rgb(43,1,97);
+    font-size:35px;
+}
+
+.contact-title p{
+    color:gray;
+}
+
+/* FORM GRID */
+
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+/* FULL WIDTH */
+
+.full-width{
+    grid-column:1 / 3;
+}
+
+/* INPUT STYLE */
+
+.input-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.input-group label{
+    margin-bottom:8px;
+    color:rgb(43,1,97);
+    font-weight:bold;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select{
+    padding:15px;
+    border:none;
+    border-bottom:2px solid #d4d4d4;
+    background:#f8f8ff;
+    font-size:15px;
+    outline:none;
+    transition:0.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus,
+.input-group select:focus{
+    border-bottom:2px solid #6c63ff;
+    background:white;
+}
+
+/* TEXTAREA */
+
+textarea{
+    resize:none;
+    height:120px;
+}
+
+/* RADIO & CHECKBOX */
+
+.option-group{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:10px;
+}
+
+/* BUTTONS */
+
+.button-group{
+    margin-top:30px;
+    text-align:center;
+}
+
+.button-group button{
+    background:linear-gradient(to right,#6c63ff,#8e44ad);
+    color:white;
+    border:none;
+    padding:14px 35px;
+    margin:10px;
+    border-radius:30px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.button-group button:hover{
+    transform:scale(1.05);
+}
+
+/* FOOTER */
+
+.Portalfooter{
+    text-align:center;
+    background:rgb(165, 165, 165);
+    padding:20px;
+    margin-top:40px;
+    box-shadow:0 -3px 10px rgba(0,0,0,0.08);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .form-grid{
+        grid-template-columns:1fr;
+    }
+
+    .full-width{
+        grid-column:1;
+    }
+
+    .Portalnav{
+        flex-wrap:wrap;
+    }
+}
+
+</style>
+</head>
+
+<body class="Portalbody">
+
+<header class="Portalheader">
+
+    <img src="Images/logo_trial (1).png" 
+    alt="Company Logo" width="250"align="Left">
+
+    <h1 style="font-family:Georgia, 'Times New Roman', Times, serif;">
+        Contact Us
+    </h1>
+   
+    </header>
+    <nav class="Portalnav">
+        <b><a href="index.html">Home</a></b>
+        <a href="about-us.html">About Us</a></b>
+        <a href="products&services.html">Products & Services</a></b>
+        <a href="pricing-page.html">Pricing Page</a></b>
+        <a href="get-invovled(portal).html">Get Involved(Portal)</a></b>
+        <a href="contact-us.html">Contact Us</a></b>
+        <a href="gallery.html">Gallery</a></b>
+      
+     
+    </nav>
+</header>
+
+
+
+<!-- ADVANCED FORM -->
+
+<section class="contact-section">
+
+    <div class="contact-title">
+
+        <h2>SereneThrive Therapy Form</h2>
+
+        <p>
+            Please complete the form below and our team 
+            will contact you shortly.
+        </p>
+
+    </div>
+
+    <form>
+
+        <div class="form-grid">
+
+            <div class="input-group">
+                <label>First Name</label>
+                <input type="text" placeholder="Enter your first name">
+            </div>
+
+            <div class="input-group">
+                <label>Surname</label>
+                <input type="text" placeholder="Enter your surname">
+            </div>
+
+          
+            <div class="input-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="example@gmail.com">
+            </div>
+
+            <div class="input-group">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="Enter phone number">
+            </div>
+
+            
+
+            <div class="input-group">
+                <label>Gender</label>
+
+                <div class="option-group">
+
+                    <label>
+                        <input type="radio" name="gender"> Female
+                    </label>
+
+                    <label>
+                        <input type="radio" name="gender"> Male
+                    </label>
+
+                    <label>
+                        <input type="radio" name="gender"> Other
+                    </label>
+
+                </div>
+            </div>
+
+
+            <div class="input-group full-width">
+
+                <label>Your Enquiry</label>
+
+                <textarea placeholder="Type your message here..."></textarea>
+
+            </div>
+
+        </div>
+
+        <div class="button-group">
+
+            <button type="submit">Submit Form</button>
+
+            <button type="reset">Reset Form</button>
+
+        </div>
+
+    </form>
+
+</section>
+
+<div class="Portalfooter">
+
+    <p>&copy; 2024 SereneThrive Therapy. All rights reserved.</p>
+
+    <p>
+        Contact us: info@serenethrive.com | 
+        Phone: 011-854-1035
+    </p>
+
+</div>
+
+</body>
+</html>

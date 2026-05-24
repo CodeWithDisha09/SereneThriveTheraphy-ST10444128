@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pricing Page</title>
+    <style>
+/* RESPONSIVE CODE FOR ALL DEVICES */
+
+*{
+    box-sizing:border-box;
+}
+
+html,body{
+    overflow-x:hidden;
+    width:100%;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+.container,
+.card-container,
+.service-boxes,
+nav,
+.Servicesnav,
+header,
+.Serviceheader{
+    width:100%;
+}
+
+@media(max-width:768px){
+
+    body{
+        padding:0;
+        margin:0;
+    }
+
+    .container{
+        width:95%;
+        margin:auto;
+    }
+
+    nav,
+    .Servicesnav,
+    header,
+    .Serviceheader{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .card-container,
+    .service-boxes{
+        grid-template-columns:1fr;
+    }
+
+    table{
+        width:100%;
+        font-size:14px;
+    }
+
+    h1{
+        font-size:30px;
+    }
+
+    h2{
+        font-size:22px;
+    }
+
+    p{
+        font-size:15px;
+    }
+}
+    </style>
+</head>
+<body class="Pricingbody" class="Pricingcontent">
+    <header class="Pricingheader">
+      <img src="Images/logo_trial (1).png" alt="Company Logo" width="250" align="Left">
+        <h1 style="font-family:Georgia, 'Times New Roman', Times, serif;"><font='7'>Pricing Page</h1></font>
+       
+    </header>
+    <nav   class=".Pricingnav" class=".Pricingnav a" >
+         <b><a href="index.html">Home</a></b>
+        <b><a href="about-us.html">About Us</a></b>
+        <b><a href="products&services.html">Products & Services</a></b>
+        <b><a href="pricing-page.html">Pricing Page</a></b>
+        <b><a href="get-invovled(portal).html">Get Involved(Portal)</a></b>
+        <b><a href="contact-us.html">Contact Us</a></b>
+        <b><a href="gallery.html">Gallery</a></b>
+      
+     
+    </nav>
+      
+     
+    
+    <div class="flip-box bronze" >
+        <div class="flip-box-inner">
+          <div class="flip-box-front" style="background-color: #CD7F32;">
+           <h2>Bronze</h2>
+            <ul>
+              <li>Online portal dashboard</li>
+              <li>Real-time reporting</li>
+              <li>Health insights and trends</li>
+              <li>E-learning wellbeing materials</li>
+              <li>Push notification tools</li>
+              <li>Health & Wellbeing blog, tips, videos, articles</li>
+              <li>Technical support</li>
+              <li>Regular review sessions and health data insights</li>
+            </ul>
+            <button class="flip-button" onclick="flip(this)">See Pricing</button>
+          </div>
+          <div class="flip-box-back">
+            <h2>Bronze Pricing</h2>
+           <p>R35 /mo</p></div>
+            
+          </div>
+        </div>
+      </div>
+      
+    
+      <div class="flip-box silver">
+        <div class="flip-box-inner">
+          <div class="flip-box-front" style="background-color: #C0C0C0;">
+            <h2>Silver</h2>
+            <ul>
+              <li>Online portal dashboard</li>
+              <li>Real-time reporting</li>
+              <li>Health insights and trends</li>
+              <li>E-learning wellbeing materials</li>
+              <li>Push notification tools</li>
+              <li>Health & Wellbeing blogs, tips, videos, articles</li>
+              <li>Dedicated account manager</li>
+              <li>Technical support</li>
+              <li>Regular review sessions and health data insights</li>
+              <li>On-site wellbeing training services</li>
+            </ul>
+            <button class="flip-button" onclick="flip(this)">See Pricing</button>
+          </div>
+          <div class="flip-box-back">
+            <h2>Silver Pricing</h2>
+            <p>R75/mo</p>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="flip-box gold">
+        <div class="flip-box-inner">
+          <div class="flip-box-front" style="background-color: #FFD700;">
+            <h2>Gold</h2>
+            <ul>
+              <li>Online portal dashboard</li>
+              <li>Real-time reporting</li>
+              <li>Health insights and trends</li>
+              <li>E-learning wellbeing materials</li>
+              <li>Push notification tools</li>
+              <li>Health & Wellbeing blogs, tips, videos, articles</li>
+              <li>Regular review sessions and health data insights</li>
+              <li>Engagement points, leaderboard, and prizes</li>
+              <li>1 on 1 health coaching</li>
+              <li>Health kiosk</li>
+            </ul>
+            <button class="flip-button" onclick="flip(this)">See Pricing</button>
+          </div>
+          <div class="flip-box-back">
+            <h2>Gold Pricing</h2>
+            <p>R105/mo</p>
+            
+          </div>
+        </div>
+      </div>
+      
+     
+
+      <div class="Pricingfooter">
+        <p>&copy; 2024 SereneThrive Therapy. All rights reserved.</p>
+      <p>Contact us: info@serenethrive.com | Phone: 011-854-1035</p>
+      </div>
+
+</body>
+</html> 
